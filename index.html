@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD con HTML, CSS y JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD de Productos</h1>
+    <form id="product-form">
+      <input type="text" id="name" placeholder="Nombre del producto" required>
+      <input type="number" id="price" placeholder="Precio" required>
+      <input type="hidden" id="productId">
+      <button type="submit" id="submitBtn">Agregar Producto</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="product-list">
+        <!-- Los productos aparecerán aquí -->
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
